@@ -18,14 +18,14 @@
       position: fixed;
       top: 0; left: 0;
       width: 100%; height: 100%;
-      background: url('https://www.nasa.gov/wp-content/uploads/2023/03/earthrise-orig.jpg') center/cover no-repeat fixed;
+      background: url('https://upload.wikimedia.org/wikipedia/commons/a/a8/NASA-Apollo8-Dec24-Earthrise.jpg') center/cover no-repeat fixed;
       z-index: -2;
     }
     .overlay {
       position: fixed;
       top: 0; left: 0;
       width: 100%; height: 100%;
-      background: rgba(0, 0, 0, 0.45);
+      background: rgba(0, 0, 0, 0.5);  /* Slightly darker overlay for better text contrast */
       z-index: -1;
     }
     .container {
@@ -39,12 +39,13 @@
     h1 {
       font-size: 4.8rem;
       margin: 40px 0 20px;
-      text-shadow: 0 0 20px rgba(255,255,255,0.6);
+      text-shadow: 0 0 20px rgba(255,255,255,0.8);  /* Stronger shadow for visibility */
     }
     .subtitle {
       font-size: 1.8rem;
       margin-bottom: 50px;
-      opacity: 0.9;
+      opacity: 0.95;
+      text-shadow: 1px 1px 4px black;
     }
     .gallery {
       display: grid;
@@ -68,6 +69,7 @@
       margin: 40px auto;
       font-size: 1.3rem;
       line-height: 1.6;
+      text-shadow: 1px 1px 3px black;  /* Helps text pop on dark BG */
     }
     .back {
       color: #4da6ff;
@@ -85,4 +87,49 @@
   <div class="background"></div>
   <div class="overlay"></div>
 
-  <div class="container
+  <div class="container">
+    <h1>LunarAstronaut.com</h1>
+    <div class="subtitle">Premium Domain for Sale – Perfect for Space Exploration, Lunar Missions, Astronaut Training, Moon Tourism or Space Tech Brands</div>
+
+    <div class="gallery">
+      <img src="https://images.unsplash.com/photo-1634361522365-72d91d5dec85?fm=jpg&q=80&w=2000" alt="Two astronauts on the lunar surface">
+      <img src="https://images.unsplash.com/photo-1691085220902-6e4ce8887d4f?fm=jpg&q=80&w=2000" alt="Astronaut with flag on the moon">
+      <img src="https://images.unsplash.com/photo-1662432583788-02aef8a0da92?fm=jpg&q=80&w=2000" alt="Astronaut exploring the lunar landscape">
+    </div>
+
+    <div class="content">
+      <p>LunarAstronaut.com is a memorable, brandable domain that instantly evokes the spirit of human exploration on the Moon — from Apollo missions to future lunar bases, astronaut experiences, space tourism, and next-generation moon technology.</p>
+      <p>Ideal for startups, space companies, educational platforms, blogs, merchandise stores, or anyone passionate about returning humans to the lunar surface.</p>
+      <p>Short, powerful, and highly marketable in the booming space industry.</p>
+    </div>
+
+    <script>
+    function openEmail(domainName) {
+      var user = 'spacedomains';
+      var domain = 'proton.me';
+      var subject = 'Domain Inquiry - ' + domainName;
+      var body = 'Hi,\n\nI\'m interested in purchasing ' + domainName + '\n\nOffer: $\n\nName:\n\nThanks!';
+      var mailtoLink = 'mailto:' + user + '@' + domain + '?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+      window.location.href = mailtoLink;
+    }
+    </script>
+
+    <h2 style="margin-top: 80px;">Contact me for inquiries about this domain</h2>
+
+    <p>
+      <a href="javascript:void(0)" onclick="openEmail('LunarAstronaut.com')"
+         style="background-color: #28a745; color: white; padding: 16px 32px; text-decoration: none; border-radius: 8px; display: inline-block; font-size: 18px; font-weight: bold; cursor: pointer;">
+        Email Me
+      </a>
+    </p>
+
+    <p>Or email me directly:</p>
+
+    <img src="https://i.imgflip.com/agw139.jpg" alt="Email: spacedomains@proton.me" style="max-width: 600px; height: auto; display: block; margin: 20px auto;">
+
+    <p>Feel free to include your offer and any questions.</p>
+
+    <a href="https://spaceenthusiast.github.io" class="back">← Back to Portfolio</a>
+  </div>
+</body>
+</html>
